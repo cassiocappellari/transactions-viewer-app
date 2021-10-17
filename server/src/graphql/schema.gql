@@ -15,5 +15,6 @@ type Transaction {
 }
 
 type Query {
-  getAllTransactions: [Transaction]
+  getAllTransactions: [Transaction],
+  getTransactionById(id: String): Transaction
 }

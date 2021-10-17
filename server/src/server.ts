@@ -10,6 +10,7 @@ const app = express();
 const port = 3000;
 const schema = makeExecutableSchema({ resolvers, typeDefs });
 
+app.use(express.json());
 app.use(router);
 app.use("/graphql", graphqlHTTP({ schema, graphiql: true }));
 
