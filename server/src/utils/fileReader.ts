@@ -2,7 +2,7 @@ import { Readable } from "stream";
 import { Transaction } from "../types/transaction";
 import readline from "readline";
 
-const readFile = async (fileBuffer: string) => {
+const fileReader = async (fileBuffer: string) => {
   const readableFile = new Readable();
   readableFile.push(fileBuffer);
   readableFile.push(null);
@@ -34,4 +34,4 @@ const readFile = async (fileBuffer: string) => {
   return transactions;
 };
 
-export default readFile;
+export default fileReader;

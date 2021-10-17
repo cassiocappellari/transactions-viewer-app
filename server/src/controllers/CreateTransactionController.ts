@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import readFile from "../utils/readFile";
+import fileReader from "../utils/fileReader";
 import CreateTransactionService from "../services/CreateTransactionService";
 
 class CreateTransactionController {
@@ -8,7 +8,7 @@ class CreateTransactionController {
     const { file } = request;
     const { buffer } = file as any;
 
-    const transactionsList = await readFile(buffer);
+    const transactionsList = await fileReader(buffer);
     await CreateTransactionService.importTransactions(transactionsList);
 
     return response.status(201).json({ message: 'transactions successfully created' });
