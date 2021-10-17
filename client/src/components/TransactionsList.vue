@@ -40,16 +40,16 @@
         <thead>
           <tr>
             <th>#</th>
-            <th>account</th>
-            <th>description</th>
-            <th>category</th>
-            <th>reference</th>
-            <th>currency</th>
-            <th>amount</th>
-            <th>status</th>
-            <th>transactionDate</th>
-            <th>createdAt</th>
-            <th>updatedAt</th>
+            <th>Account</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Reference</th>
+            <th>Currency</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Transaction Date</th>
+            <th>Created At</th>
+            <th>Updated At</th>
           </tr>
         </thead>
         <tbody>
