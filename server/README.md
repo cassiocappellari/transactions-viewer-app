@@ -10,6 +10,7 @@ Back-end:
 - GraphQL Tools
 - Express
 - Multer
+- Cors
 - Docker
 
 Database:
