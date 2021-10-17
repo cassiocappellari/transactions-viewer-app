@@ -3,9 +3,12 @@
 Back-end:
 
 - Node.js
-- Express
 - TypeScript
 - Prisma
+- GraphQL
+- Express GraphQL
+- GraphQL Tools
+- Express
 - Multer
 - Docker
 
