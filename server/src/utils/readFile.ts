@@ -1,6 +1,6 @@
 import { Readable } from "stream";
-import readline from "readline";
 import { Transaction } from "../types/transaction";
+import readline from "readline";
 
 const readFile = async (fileBuffer: string) => {
   const readableFile = new Readable();
@@ -34,4 +34,4 @@ const readFile = async (fileBuffer: string) => {
   return transactions;
 };
 
-export { readFile };
+export default readFile;

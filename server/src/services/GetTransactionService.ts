@@ -1,4 +1,4 @@
-import { client } from "../database/client";
+import client from "../database/client";
 
 class GetTransactionService {
 
@@ -33,4 +33,4 @@ class GetTransactionService {
 
 };
 
-export { GetTransactionService };
+export default GetTransactionService;

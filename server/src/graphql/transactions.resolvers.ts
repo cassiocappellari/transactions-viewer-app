@@ -1,6 +1,7 @@
-import { GetTransactionService } from "../services/GetTransactionService";
+import GetTransactionService from "../services/GetTransactionService";
 
 const transactionsResolvers = {
+
   Query: {
     getAllTransactions() {
       const transactions = GetTransactionService.getTransactions();
@@ -18,6 +19,7 @@ const transactionsResolvers = {
       return transaction;
     }
   }
+
 };
 
 export default transactionsResolvers;

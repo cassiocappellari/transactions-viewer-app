@@ -17,5 +17,5 @@ app.use(router);
 app.use("/graphql", graphqlHTTP({ schema, graphiql: true }));
 
 app.listen(port, () => console.log(
-  `server started at http://localhost:${port}`
+  `Server started at http://localhost:${port}`
 ));

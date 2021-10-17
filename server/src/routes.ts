@@ -1,6 +1,6 @@
 import { Router } from "express";
 import multer from "multer";
-import { CreateTransactionController } from "./controllers/CreateTransactionController";
+import CreateTransactionController from "./controllers/CreateTransactionController";
 
 const router = Router();
 const multerConfig = multer();
