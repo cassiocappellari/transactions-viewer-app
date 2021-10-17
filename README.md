@@ -1,8 +1,10 @@
-# Transactions Viewer APP
+# Transactions Viewer APP (Airbank Challenge)
 
-## 🤖 Technologies
+Transactions Viewer is a Single Page Application that allows users to import CSV financial transactions files through an API endpoint and then exhibits all them in a table in the client side. Besides that, this web application also provides the possibility of filtering transactions by month and checking each transaction details.
 
-### Front-end
+# 🤖 Technologies
+
+## Front-end
 
 - Vue.js
 - JavaScript
@@ -10,7 +12,7 @@
 - Vue Apollo
 - Vue Router
 
-### Back-end
+## Back-end
 
 - Node.js
 - TypeScript
@@ -21,18 +23,18 @@
 - Express
 - Multer
 
-### Database
+## Database
 
 - PostgreSQL
 
-## 🚀 Features
+# 🚀 Features
 
-- List transactions
-- Filter transactions by date range
-- Check transations details
-- Import transactions CSV files (back-end service)
+- 📃 List transactions
+- 📆 Filter transactions by date range (start month / end month)
+- 🔎 Verify transaction details
+- 📦 Import transactions CSV files (back-end service)
 
-## ⚙ How to Run
+# 🛠 How to Run
 
 ```bash
 # Clone this repository
@@ -45,13 +47,21 @@ $ cd transactions-viewer-app
 
 ```
 
-### Back-end
+## Back-end
 
 ```bash
 # Enter the server folder
 
 $ cd server
+```
+Before install the server dependencies, configure the database .env variable:
+## .env
 
+key|value
+---|---
+DATABASE_URL|`"postgresql://postgres:postgres@localhost:5432/postgres?schema=public"`
+
+```bash
 # Install the dependencies
 
 $ npm install
@@ -61,25 +71,19 @@ $ npm install
 $ npm run dev
 ```
 
-### .env
-
-key|value
----|---
-DATABASE_URL|`postgresql://postgres:postgres@localhost:5432/postgres?schema=public`
-
-### Database
+## Database
 
 ```bash
-# Run Docker container
+# Run a Docker PostgreSQL container
 
-docker run --name postgresql-container -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+docker run --name postgresql-transactions-viewer-app -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
 
-# Run migrations
+# Run the migrations
 
 $ npx prisma migrate dev
 ```
 
-### Front-end
+## Front-end
 
 ```bash
 # Enter the client folder
@@ -99,7 +103,7 @@ $ npm run serve
 http://localhost:8081
 ```
 
-## 👨‍🚀 Author
+# 👨‍🚀 Author
 
 **Cássio Cappellari**
 
