@@ -1,18 +1,14 @@
 <template>
   <div id="app">
-    <TransactionsList />
+    <router-view />
   </div>
 </template>
 
 <script>
-import TransactionsList from './components/TransactionsList.vue'
 
 export default {
-  name: 'App',
-  components: {
-    TransactionsList
-  }
-}
+	name: "App",
+};
 </script>
 
 <style>
