@@ -4,34 +4,34 @@
       <div>
         <label>Start month:
           <select v-model="startMonth" required>
-            <option value="2021-01-06T09:08:55.000Z">January</option>
-            <option value="february">February</option>
-            <option value="march">March</option>
-            <option value="april">April</option>
-            <option value="may">May</option>
-            <option value="june">June</option>
-            <option value="july">July</option>
-            <option value="august">August</option>
-            <option value="september">September</option>
-            <option value="october">October</option>
-            <option value="november">November</option>
-            <option value="december">December</option>
+            <option value="2020-01-01T00:00:00.000Z">January</option>
+            <option value="2020-02-01T00:00:00.000Z">February</option>
+            <option value="2020-03-01T00:00:00.000Z">March</option>
+            <option value="2020-04-01T00:00:00.000Z">April</option>
+            <option value="2020-05-01T00:00:00.000Z">May</option>
+            <option value="2020-06-01T00:00:00.000Z">June</option>
+            <option value="2020-07-01T00:00:00.000Z">July</option>
+            <option value="2020-08-01T00:00:00.000Z">August</option>
+            <option value="2020-09-01T00:00:00.000Z">September</option>
+            <option value="2020-10-01T00:00:00.000Z">October</option>
+            <option value="2020-11-01T00:00:00.000Z">November</option>
+            <option value="2020-12-01T00:00:00.000Z">December</option>
           </select>
         </label>
         <label>End month:
           <select v-model="endMonth" required>
-            <option value="january">January</option>
-            <option value="2021-02-19T08:26:29.000Z">February</option>
-            <option value="march">March</option>
-            <option value="april">April</option>
-            <option value="may">May</option>
-            <option value="june">June</option>
-            <option value="july">July</option>
-            <option value="august">August</option>
-            <option value="september">September</option>
-            <option value="october">October</option>
-            <option value="november">November</option>
-            <option value="december">December</option>
+            <option value="2021-01-31T23:59:59.000Z">January</option>
+            <option value="2021-02-28T23:59:59.000Z">February</option>
+            <option value="2021-03-31T23:59:59.000Z">March</option>
+            <option value="2021-04-30T23:59:59.000Z">April</option>
+            <option value="2021-05-31T23:59:59.000Z">May</option>
+            <option value="2021-06-30T23:59:59.000Z">June</option>
+            <option value="2021-07-31T23:59:59.000Z">July</option>
+            <option value="2021-08-31T23:59:59.000Z">August</option>
+            <option value="2021-09-30T23:59:59.000Z">September</option>
+            <option value="2021-10-31T23:59:59.000Z">October</option>
+            <option value="2021-11-30T23:59:59.000Z">November</option>
+            <option value="2021-12-31T23:59:59.000Z">December</option>
           </select>
         </label>
         <button @click="getTransactionsByDateRange(startMonth, endMonth)">Filter</button>
