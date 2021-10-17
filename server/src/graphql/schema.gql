@@ -1,7 +1,7 @@
 scalar Date
 
 type Transaction {
-    id: String,
+    id: ID,
     account: String,
     description: String,
     category: String,
@@ -16,6 +16,6 @@ type Transaction {
 
 type Query {
   getAllTransactions: [Transaction],
-  getTransactionsByDateRange(startMonth: String, endMonth: String): [Transaction],
-  getTransactionById(id: String): Transaction
+  getTransactionsByDateRange(startMonth: Date, endMonth: Date): [Transaction],
+  getTransactionById(id: ID): Transaction
 }

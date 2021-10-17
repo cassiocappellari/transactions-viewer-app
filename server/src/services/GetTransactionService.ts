@@ -8,8 +8,13 @@ class GetTransactionService {
     return transactions;
   };
 
-  static async getTransactionsByDateRange(startMonth: string, endMonth: string) {
+  static async getTransactionsByDateRange(startMonth: Date, endMonth: Date) {
     const transactions = await client.transactions.findMany({
+      orderBy: [
+        {
+          createdAt: 'asc'
+        }
+      ],
       where: {
         createdAt: {
           gte: startMonth,
