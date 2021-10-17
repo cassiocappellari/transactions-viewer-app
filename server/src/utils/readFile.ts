@@ -1,19 +1,6 @@
 import { Readable } from "stream";
 import readline from "readline";
-
-type Transaction = {
-  id: string;
-  account?: string;
-  description?: string;
-  category?: string;
-  reference?: string;
-  currency?: string;
-  amount?: number;
-  status?: string;
-  transactionDate?: Date;
-  createdAt?: Date;
-  updatedAt?: Date;
-};
+import { Transaction } from "../types/transaction";
 
 const readFile = async (fileBuffer: string) => {
   const readableFile = new Readable();
