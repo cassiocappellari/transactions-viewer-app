@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <div>
+      <div id="filter-container">
         <label>Start month:
           <select v-model="startMonth" required>
             <option value="2020-01-01T00:00:00.000Z">January</option>
@@ -18,7 +18,7 @@
             <option value="2020-12-01T00:00:00.000Z">December</option>
           </select>
         </label>
-        <label>End month:
+        <label id="filter-end-month">End month:
           <select v-model="endMonth" required>
             <option value="2021-01-31T23:59:59.000Z">January</option>
             <option value="2021-02-28T23:59:59.000Z">February</option>
@@ -34,9 +34,9 @@
             <option value="2021-12-31T23:59:59.000Z">December</option>
           </select>
         </label>
-        <button @click="getTransactionsByDateRange(startMonth, endMonth)">Filter</button>
+        <button id="filter-button" @click="getTransactionsByDateRange(startMonth, endMonth)">Filter</button>
       </div>
-      <table width="80%" border="1" align="center">
+      <table align="center" border="1">
         <thead>
           <tr>
             <th>#</th>

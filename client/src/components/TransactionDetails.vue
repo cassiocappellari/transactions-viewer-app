@@ -1,8 +1,10 @@
 <template>
   <div>
     <div>
-      <router-link :to="{ name: 'list' }">Back</router-link>
-      <table width="80%" border="1" align="center">
+      <div id="back-container">
+        <router-link :to="{ name: 'list' }">Back</router-link>
+      </div>
+      <table align="center" border="1">
         <thead>
           <tr>
             <th>Account</th>
