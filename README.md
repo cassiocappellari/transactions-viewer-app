@@ -1,6 +1,16 @@
 # Transactions Viewer APP (Airbank Challenge)
 
-Transactions Viewer is a Single Page Application that allows users to import CSV financial transactions files through an API endpoint and then exhibits all them in a table in the client side. Besides that, this web application also provides the possibility of filtering transactions by month and checking each transaction details.
+## 📋 Index
+
+- [About](#-about)
+- [Technologies](#-features)
+- [Features](#-technologies)
+- [How To Use](#-how-to-use)
+- [Author](#-author)
+
+# 🗃 About
+
+**Transactions Viewer** is a Single Page Application that allows users to import CSV financial transactions files through an API endpoint and then exhibits all them in a table in the client side. Besides that, this web application also provides the possibility of filtering transactions by month and checking each transaction details.
 
 # 🤖 Technologies
 
@@ -34,6 +44,15 @@ Transactions Viewer is a Single Page Application that allows users to import CSV
 - 🔎 Verify transaction details
 - 📦 Import transactions CSV files (back-end service)
 
+You can test the features by sending the GraphQL Queries or HTTP Requests clicking in the button bellow:
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=transactions-viewer-app&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fcassiocappellari%2Ftransactions-viewer-app%2Fmaster%2Fserver%2Ftransaction-viewer-collection.json)
+
+In order to use the import CSV files feature, the transactions table must have this 11 columns:
+
+| id 	| account 	| description 	| category 	| reference 	| currency 	| amount 	| status 	| transactionDate 	| createdAt 	| updatedAt 	|
+|:--:	|:-------:	|:-----------:	|:--------:	|:---------:	|:--------:	|:------:	|:------:	|:---------------:	|:---------:	|:---------:	|
+
 # 🛠 How to Run
 
 ```bash
@@ -47,7 +66,7 @@ $ cd transactions-viewer-app
 
 ```
 
-## Back-end
+## 🗄 Back-end
 
 ```bash
 # Enter the server folder
@@ -55,7 +74,7 @@ $ cd transactions-viewer-app
 $ cd server
 ```
 Before install the server dependencies, configure the database .env variable:
-## .env
+## 🔑 .env
 
 key|value
 ---|---
@@ -71,7 +90,7 @@ $ npm install
 $ npm run dev
 ```
 
-## Database
+## 💽 Database
 
 ```bash
 # Run a Docker PostgreSQL container
@@ -83,7 +102,7 @@ docker run --name postgresql-transactions-viewer-app -p 5432:5432 -e POSTGRES_PA
 $ npx prisma migrate dev
 ```
 
-## Front-end
+## 💻 Front-end
 
 ```bash
 # Enter the client folder
@@ -110,3 +129,7 @@ http://localhost:8081
 - GitHub: [@cassiocappellari](https://github.com/cassiocappellari)
 - LinkedIn: [@cassiocappellari](https://www.linkedin.com/in/cassiocappellari/)
 - Dev Community: [@cassiocappellari](https://dev.to/cassiocappellari)
+
+---
+
+Developed with 🤍 by Cássio Cappellari!
