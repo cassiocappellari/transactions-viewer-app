@@ -3,36 +3,10 @@
     <div>
       <div id="filter-container">
         <label>Start month:
-          <select v-model="startMonth" required>
-            <option value="2020-01-01T00:00:00.000Z">January/2020</option>
-            <option value="2020-02-01T00:00:00.000Z">February/2020</option>
-            <option value="2020-03-01T00:00:00.000Z">March/2020</option>
-            <option value="2020-04-01T00:00:00.000Z">April/2020</option>
-            <option value="2020-05-01T00:00:00.000Z">May/2020</option>
-            <option value="2020-06-01T00:00:00.000Z">June/2020</option>
-            <option value="2020-07-01T00:00:00.000Z">July/2020</option>
-            <option value="2020-08-01T00:00:00.000Z">August/2020</option>
-            <option value="2020-09-01T00:00:00.000Z">September/2020</option>
-            <option value="2020-10-01T00:00:00.000Z">October/2020</option>
-            <option value="2020-11-01T00:00:00.000Z">November/2020</option>
-            <option value="2020-12-01T00:00:00.000Z">December/2020</option>
-          </select>
+          <input type="datetime" v-mask="'####/##'" placeholder="YYYY/MM" v-model="startMonth" required>
         </label>
         <label id="filter-end-month">End month:
-          <select v-model="endMonth" required>
-            <option value="2021-01-31T23:59:59.000Z">January/2021</option>
-            <option value="2021-02-28T23:59:59.000Z">February/2021</option>
-            <option value="2021-03-31T23:59:59.000Z">March/2021</option>
-            <option value="2021-04-30T23:59:59.000Z">April/2021</option>
-            <option value="2021-05-31T23:59:59.000Z">May/2021</option>
-            <option value="2021-06-30T23:59:59.000Z">June/2021</option>
-            <option value="2021-07-31T23:59:59.000Z">July/2021</option>
-            <option value="2021-08-31T23:59:59.000Z">August/2021</option>
-            <option value="2021-09-30T23:59:59.000Z">September/2021</option>
-            <option value="2021-10-31T23:59:59.000Z">October/2021</option>
-            <option value="2021-11-30T23:59:59.000Z">November/2021</option>
-            <option value="2021-12-31T23:59:59.000Z">December/2021</option>
-          </select>
+          <input type="datetime" v-mask="'####/##'" placeholder="YYYY/MM" v-model="endMonth" required>
         </label>
         <button id="filter-button" @click="getTransactionsByDateRange(startMonth, endMonth)">Filter</button>
       </div>
