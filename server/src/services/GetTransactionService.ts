@@ -1,4 +1,5 @@
 import client from "../database/client";
+import dateFormatter from "../utils/dateFormatter";
 
 class GetTransactionService {
 
@@ -8,7 +9,8 @@ class GetTransactionService {
     return transactions;
   };
 
-  static async getTransactionsByDateRange(startMonth: Date, endMonth: Date) {
+  static async getTransactionsByDateRange(startMonth: string, endMonth: string) {
+    const formatedDates = await dateFormatter(startMonth, endMonth);
     const transactions = await client.transactions.findMany({
       orderBy: [
         {
@@ -17,8 +19,8 @@ class GetTransactionService {
       ],
       where: {
         createdAt: {
-          gte: startMonth,
-          lte: endMonth
+          gte: formatedDates.startDate,
+          lte: formatedDates.endDate
         }
       }
     });
