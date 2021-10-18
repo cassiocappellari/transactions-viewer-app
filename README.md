@@ -1,10 +1,10 @@
-# Transactions Viewer APP (Airbank Challenge)
+<h1 align="center">Transactions Viewer APP (Airbank Challenge)</h1>
 
 ## 📋 Index
 
 - [About](#-about)
-- [Technologies](#-features)
-- [Features](#-technologies)
+- [Technologies](#-technologies)
+- [Features](#-features)
 - [How To Use](#-how-to-use)
 - [Author](#-author)
 
@@ -44,7 +44,7 @@
 - 🔎 Verify transaction details
 - 📦 Import transactions CSV files (back-end service)
 
-You can test the features by sending the GraphQL Queries or HTTP Requests clicking in the button bellow:
+You can test the features by sending the GraphQL Queries or HTTP Requests through the button bellow:
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=transactions-viewer-app&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fcassiocappellari%2Ftransactions-viewer-app%2Fmaster%2Fserver%2Ftransaction-viewer-collection.json)
 
