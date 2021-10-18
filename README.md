@@ -21,6 +21,7 @@
 - GraphQL
 - Vue Apollo
 - Vue Router
+- V-mask
 
 ## Back-end
 
@@ -32,6 +33,7 @@
 - Express GraphQL
 - Express
 - Multer
+- Luxon
 
 ## Database
 
