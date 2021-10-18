@@ -2,7 +2,7 @@ import { Readable } from "stream";
 import { Transaction } from "../types/transaction";
 import readline from "readline";
 
-const fileReader = async (fileBuffer: string) => {
+const fileReader = async (fileBuffer: Buffer) => {
   const readableFile = new Readable();
   readableFile.push(fileBuffer);
   readableFile.push(null);

@@ -11,6 +11,7 @@ class GetTransactionService {
 
   static async getTransactionsByDateRange(startMonth: string, endMonth: string) {
     const formatedDates = await dateFormatter(startMonth, endMonth);
+
     const transactions = await client.transactions.findMany({
       orderBy: [
         {

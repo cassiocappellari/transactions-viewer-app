@@ -1,9 +1,11 @@
 import client from "../database/client";
-import { Transaction } from "../types/transaction";
+import fileReader from "../utils/fileReader";
 
 class CreateTransactionService {
 
-  static async importTransactions(transactions: Transaction[]) {
+  static async importTransactions(buffer: Buffer) {
+    const transactions = await fileReader(buffer);
+
     for await (let {
       id,
       account,
