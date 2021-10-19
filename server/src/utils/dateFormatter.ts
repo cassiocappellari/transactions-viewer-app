@@ -13,10 +13,18 @@ const dateFormatter = async (startMonth: string, endMonth: string) => {
     startSecond: 0
   };
 
+  let endDay = 31;
+
+  if (splitedEndMonth.includes("04") || splitedEndMonth.includes("06") || splitedEndMonth.includes("09") || splitedEndMonth.includes("11")) {
+    endDay = 30
+  } else if (splitedEndMonth.includes("02")) {
+    endDay = 28
+  };
+
   const endDate = {
     endYear: Number(splitedEndMonth[0]),
     endMonth: Number(splitedEndMonth[1]),
-    endDay: 28 || 29 || 30 || 31,
+    endDay: endDay,
     endHour: 23,
     endMinute: 59,
     endSecond: 59
