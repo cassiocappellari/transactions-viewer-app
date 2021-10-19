@@ -20,8 +20,8 @@ class GetTransactionService {
       ],
       where: {
         createdAt: {
-          gte: formatedDates.startDate,
-          lte: formatedDates.endDate
+          gte: formatedDates.formattedStartDate,
+          lte: formatedDates.formattedEndDate
         }
       }
     });

@@ -1,17 +1,17 @@
 scalar Date
 
 type Transaction {
-    id: ID,
-    account: String,
-    description: String,
-    category: String,
-    reference: String,
-    currency: String,
-    amount: Float,
-    status: String,
-    transactionDate: Date,
-    createdAt: Date,
-    updatedAt: Date
+  id: ID,
+  account: String,
+  description: String,
+  category: String,
+  reference: String,
+  currency: String,
+  amount: Float,
+  status: String,
+  transactionDate: Date,
+  createdAt: Date,
+  updatedAt: Date
 }
 
 type Query {

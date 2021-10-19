@@ -6,6 +6,6 @@ const router = Router();
 const multerConfig = multer();
 const createTransactionController = new CreateTransactionController();
 
-router.post("/transactions", multerConfig.single("file"), createTransactionController.importTransactions)
+router.post("/transactions", multerConfig.single("file"), createTransactionController.importTransactions);
 
 export { router };
