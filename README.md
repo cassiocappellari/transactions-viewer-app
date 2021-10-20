@@ -1,5 +1,9 @@
 <h1 align="center">Transactions Viewer APP (Airbank Challenge)</h1>
 
+<h2 align="center">
+    <img src="./client/src/assets/transaction_viewer_example.gif">
+</h2>
+
 ## 📋 Index
 
 - [About](#-about)
