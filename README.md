@@ -84,7 +84,7 @@ Before install the server dependencies, configure the database .env variable:
 
 key|value
 ---|---
-DATABASE_URL|`"postgresql://postgres:postgres@localhost:5432/postgres?schema=public"`
+DATABASE_URL|`"postgresql://postgres:postgres@localhost:5432//transactions-viewer"`
 
 ```bash
 # Install the dependencies
@@ -102,6 +102,10 @@ $ npm run dev
 # Run a Docker PostgreSQL container
 
 docker run --name postgresql-transactions-viewer-app -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+
+# Link Prisma schema and DATABASE_URL variable
+
+$ npx prisma generate
 
 # Run the migrations
 
@@ -125,7 +129,7 @@ $ npm run serve
 
 # Access the app
 
-http://localhost:8081
+http://localhost:8080
 ```
 
 # 👨‍🚀 Author
