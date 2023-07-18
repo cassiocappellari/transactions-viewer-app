@@ -1,4 +1,4 @@
-<h1 align="center">Transactions Viewer APP (Airbank Challenge)</h1>
+<h1 align="center">Transactions Viewer APP</h1>
 
 ## 📋 Index
 
